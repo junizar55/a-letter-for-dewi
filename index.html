@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Letter for You</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HERO / TAMPILAN AWAL -->
+    <main class="hero" id="hero">
+      <div class="glow"></div>
+
+      <section class="card">
+        <div class="tag">HAPPY VALENTINE'S DAY SAYANG</div>
+
+        <h1 class="title">Untuk Orang Tersayangku</h1>
+
+        <p class="subtitle" id="introText">
+         Kalau kamu sampai di sini, mungkin semesta memang ingin kamu membaca ini.
+        </p>
+
+        <div class="actions">
+          <button class="btn" id="readBtn">Click Me!</button>
+          <button class="sound-btn" id="soundBtn" aria-label="Toggle sound">
+            🔇
+          </button>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Musik (mulai setelah klik) -->
+    <audio id="bgm" loop>
+      <source src="music.mp3" type="audio/mpeg" />
+      Browser kamu tidak mendukung audio.
+    </audio>
+
+ <!-- DUA KERTAS -->
+    <div class="letters" id="letterBox" aria-live="polite">
+      <div class="letter" id="page1">
+        <p id="typedText1"></p>
+      </div>
+
+      <div class="letter" id="page2">
+        <p id="typedText2"></p>
+        <img src="ttd.png" alt="Signature" class="signature" id="signature" />
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
